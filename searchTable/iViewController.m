@@ -41,8 +41,6 @@ iTableView *tabDelegate;
     self.searchBarController=[[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
     [self.searchBar setDelegate:tabDelegate];
     [self.searchBarController setDelegate:tabDelegate];
-    self.searchBarController.searchResultsDelegate = tabDelegate;
-    self.searchBarController.searchResultsDataSource = tabDelegate;
     [self.view addSubview:self.searchBar];
 }
 
